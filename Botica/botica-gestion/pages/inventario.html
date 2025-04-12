@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventario</title>
+  <link rel="stylesheet" href="../assets/css/estilos.css">
+</head>
+<body>
+  <h2>Gestión de Inventario</h2>
+  <form id="formInventario">
+    <input type="text" placeholder="Nombre del Producto" id="producto" required>
+    <input type="text" placeholder="Código" id="codigo" required>
+    <input type="text" placeholder="Proveedor" id="proveedor">
+    <input type="number" placeholder="Stock" id="stock" min="0">
+    <input type="date" id="caducidad">
+    <button type="submit">Agregar Producto</button>
+  </form>
+
+  <h3>Lista de Productos</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Código</th>
+        <th>Proveedor</th>
+        <th>Stock</th>
+        <th>Caducidad</th>
+      </tr>
+    </thead>
+    <tbody id="tablaInventario"></tbody>
+  </table>
+
+  <script src="../assets/js/inventario.js"></script>
+  <footer>
+    <p>&copy; 2025 Botica Gestión. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

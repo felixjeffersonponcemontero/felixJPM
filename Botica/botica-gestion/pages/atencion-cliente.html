@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención al Cliente</title>
+    <link rel="stylesheet" href="../assets/css/antencion_cliente.css">
+    <style>
+        /* Estilos adicionales para la sección de advertencias */
+        #advertencias {
+            background-color: #ffe0b2; /* Un color amarillo claro para destacar */
+            border: 1px solid #ffb300; /* Un borde naranja */
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        #advertencias h2 {
+            color: #ff6f00; /* Un color naranja más oscuro para el título */
+            border-bottom: 1px solid #ffb300;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        #advertencias ul {
+            list-style-type: disc; /* Viñetas para la lista */
+            padding-left: 20px;
+        }
+
+        #advertencias li {
+            color: #795548; /* Un color marrón para el texto de la advertencia */
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="contacto">
+            <h2>Contáctenos</h2>
+            <p>Por favor, complete el siguiente formulario para ponerse en contacto con nuestro equipo de atención al cliente.</p>
+            <form>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <section id="advertencias">
+            <h2>Advertencias Importantes</h2>
+            <ul>
+                <li>Por favor, no incluya información personal sensible (como números de tarjeta de crédito o contraseñas) en este formulario.</li>
+                <li>Nuestro tiempo de respuesta puede variar dependiendo del volumen de consultas. Le pedimos paciencia.</li>
+                <li>Asegúrese de proporcionar una dirección de correo electrónico válida para que podamos responder a su consulta.</li>
+                <li>Este formulario es solo para consultas de atención al cliente. Para otros asuntos, por favor, consulte las secciones correspondientes de nuestro sitio web.</li>
+            </ul>
+        </section>
+
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <ul>
+                <li>
+                    <h3>¿Cuál es su horario de atención?</h3>
+                    <p>Nuestro horario de atención es de lunes a viernes de 9:00 a 18:00.</p>
+                </li>
+                <li>
+                    <h3>¿Cómo puedo realizar una devolución?</h3>
+                    <p>Para realizar una devolución, por favor visite nuestra página de políticas de devolución o contáctenos directamente.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Botica Gestión. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

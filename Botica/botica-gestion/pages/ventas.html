@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Ventas</title>
+  <link rel="stylesheet" href="../assets/css/estilos.css">
+</head>
+<body>
+  <h2>Registro de Ventas</h2>
+  <form id="formVentas">
+    <input type="text" placeholder="Cliente" id="cliente">
+    <input type="text" placeholder="Producto" id="productoVenta">
+    <input type="number" placeholder="Cantidad" id="cantidad" min="1">
+    <select id="pago">
+      <option value="Efectivo">Efectivo</option>
+      <option value="Tarjeta">Tarjeta</option>
+    </select>
+    <button type="submit">Registrar Venta</button>
+  </form>
+
+  <h3>Historial de Ventas</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Cliente</th>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Pago</th>
+        <th>Fecha</th>
+      </tr>
+    </thead>
+    <tbody id="tablaVentas"></tbody>
+  </table>
+
+  <script src="../assets/js/ventas.js"></script>
+  <footer>
+    <p>&copy; 2025 Botica Gestión. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
